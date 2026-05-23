@@ -12,7 +12,7 @@ import reviewRoutes from "./routes/reviews";
 
 const app = express();
 
-app.use(cors({ origin: config.clientOrigin, credentials: true }));
+app.use(cors());
 app.use(express.json());
 app.use(morgan("dev"));
 
